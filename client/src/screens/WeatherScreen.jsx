@@ -50,9 +50,6 @@ const WeatherScreen = ({ navigation }) => {
   const [call, setCall] = useState(true);
   const [weatherInfo, setWeatherInfo] = useState(mockWeahter);
   const arr = ["N","NNE","NE","ENE","E","ESE", "SE", "SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"];
-  const API_KEY = "2c12e682e32044aa77c25761cd0eb67d";
-  // const API_KEY = "285af129414608882e804d2b70c38dae"; // plan b api key
-  // const API_KEY = "a795e73e35a61d346e80e5d5cbc1854e"; // plan c api key
   const location = navigation.state.params.loca//navigation.getParam('loca')
   // const dumpWeather = require('./weather.json');
   useEffect(() => {
